@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  app01:
+    container_name: tictactoe_srv1
+    image: nginx-tictactoe:0.1
+    cpus: 0.5
+    mem_limit: 256m
+    ports:
+      - "8000:80"
+  app02:
+    container_name: tictactoe_srv2
+    image: nginx-tictactoe:0.1
+    cpus: 0.5
+    mem_limit: 256m
+    ports:
+      - "8080:80"
